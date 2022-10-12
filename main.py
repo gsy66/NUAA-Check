@@ -6,6 +6,7 @@ import os
 import datetime
 import json
 from encrypt import AES_decrypt
+import traceback
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -75,3 +76,5 @@ if __name__ == "__main__":
     except Exception as err:
         send("打卡失败","打卡失败，程序错误，" + repr(err))
         logger.critical("打卡失败，程序错误，" + repr(err))
+        traceback.print_exc()
+
