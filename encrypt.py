@@ -40,4 +40,3 @@ if __name__ == "__main__":
         f.write(enctext)
 
     print("加密成功")
-

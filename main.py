@@ -77,4 +77,3 @@ if __name__ == "__main__":
         send("打卡失败","打卡失败，程序错误，" + repr(err))
         logger.critical("打卡失败，程序错误，" + repr(err))
         traceback.print_exc()
-
